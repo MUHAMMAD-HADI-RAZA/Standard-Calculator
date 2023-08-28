@@ -55,9 +55,12 @@ class Calculator:
         self.root.geometry("400x500")
         self.root.configure(bg = BackGround_Color)
 
+        self.Heading_Label = tk.Label(root, text="CALCULATOR", font=("Times New Roman", 18), padx=20, pady=10,bg=BackGround_Color)
+        self.Heading_Label.pack(fill="both", expand=False)
+
         self.result_Var = tk.StringVar()
 
-        self.result_Label = tk.Label(root, textvariable=self.result_Var, font=("Xenara", 24), anchor="e", padx=20, pady=10, bg= BackGround_Color )
+        self.result_Label = tk.Label(root, textvariable=self.result_Var, font=("Xenara", 24), anchor="e", padx=20, pady=10, bg= "white", relief="solid" )
         self.result_Label.pack(fill="both", expand=True)
 
         self.Button_Frame = tk.Frame(root, bg=BackGround_Color)
